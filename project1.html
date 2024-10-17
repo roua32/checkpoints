@@ -4,49 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project1</title>
-    <style>
-      header {
-        background-color: #93bce2;
-        color: white;
-        padding: 15px;
-        text-align: center;
-      }
-      nav {
-        margin: 20px 0;
-      }
-      nav a {
-        margin: 0 15px;
-        color: rgb(219, 124, 124);
-        text-decoration: none;
-      }
-      section {
-        margin: 20px;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-      }
-      footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #b2abeb;
-        color: white;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="./style/styles.css" />
   </head>
   <body>
     <header>
-      <h1>Me</h1>
+      <h1 class="header">Me</h1>
       <nav>
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
+        <a class="nav-item" href="#about">About</a>
+        <a class="nav-item" href="#work">Work</a>
+        <a class="nav-item" href="#resume">Resume</a>
+        <a class="nav-item" href="#contact">Contact</a>
       </nav>
     </header>
-    <main>
+    <main id="main">
       <section id="about">
         <h2>About me</h2>
         <p>
@@ -90,7 +60,8 @@
       </section>
       <section id="contact">
         <h2>Contact Me</h2>
-        <form action="submit">
+
+        <form>
           <label for="name">Your name</label>
           <input type="text" placeholder="Type your name" />
           <br />
@@ -105,6 +76,7 @@
             rows="5"
             placeholder=" Say Something"
           ></textarea>
+          <button>submit</button>
         </form>
       </section>
     </main>
